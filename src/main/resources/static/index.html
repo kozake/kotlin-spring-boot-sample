@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hello AngularJS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], .ng-cloak {
+	        display: none !important;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script src="lib/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script src="js/hello.js"></script>
+</head>
+
+<body ng-app="hello">
+<div class="container">
+    <h1>Greeting</h1>
+    <div ng-controller="home as home" ng-cloak class="ng-cloak">
+        <p>The ID is {{home.greeting.id}}</p>
+        <p>The content is {{home.greeting.content}}</p>
+    </div>
+</div>
+</body>
+</html>
